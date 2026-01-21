@@ -1,6 +1,10 @@
-const tulip = document.getElementById("tulip");
-const textBox = document.getElementById("textBox");
+window.onload = function () {
+  var tulip = document.getElementById("tulip");
+  var textBox = document.getElementById("textBox");
 
-tulip.onclick = () => {
-  textBox.classList.add("show");
+  if (tulip) {
+    tulip.onclick = function () {
+      textBox.classList.add("show");
+    };
+  }
 };
